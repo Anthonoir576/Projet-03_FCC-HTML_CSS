@@ -1,0 +1,456 @@
+// variable
+$grayPerso: #dbdbdb;
+$myYellow: #ffc107;
+
+body {
+
+    font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    background-color: $grayPerso;
+    background-image: url(image/banner2.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto;
+    background-attachment: fixed, local;
+
+}
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+//logo myc
+#logo {
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: fixed;
+    top: 1rem;
+    left: 1em;
+    max-width: 90px;
+
+    & > img {
+
+        width: 35px;
+        height: 30px;
+
+    }
+
+}
+   
+
+
+// title
+h1 {
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-left: 2em;
+    // adjust
+    position: relative;
+    bottom: 0.39em;
+
+    color: white;
+    font-family: 'ZCOOL KuaiLe', cursive;
+
+    & img {
+
+        max-width: 35px auto ;
+        width: 35px;
+        height: auto;
+
+        margin-left: 1em;
+        position: relative;
+        top: 0.35em;
+        
+    }
+
+    &:hover {
+
+        color: $myYellow;
+
+    }
+}
+
+// navigation bar
+#navBar {
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.5em;
+    //margin: -6em -0.5em 0em -0.5em;
+
+    background-color: rgb(128, 128, 128, 0.85);
+    background-attachment: fixed;
+    border: 0.18em solid $myYellow;
+    border-radius: 10px;
+
+    background-attachment: fixed;
+    background-size: cover;
+    width: auto;
+    
+    & ul {
+
+        display: flex;
+        margin-top: 1.3em;
+
+    }
+
+    & li {
+
+        list-style-type: none;
+        margin-left: 7.5em;
+        
+    }
+
+    & a {
+
+        text-decoration: none;
+        font-size: 1.7em;
+        color: rgb(255, 255, 255); 
+        
+    }
+
+    & a:hover {
+
+        border: 1px solid $myYellow;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: -0.44em;
+        font-weight: 900;
+        
+        color: $myYellow;
+        text-shadow: 0px 2px 5px black;
+        
+    }
+}
+
+// effet background url and color block slide
+#blocEffect {
+  
+    background-color: $grayPerso;
+    margin: -0.5em;
+    padding-top: 5em;
+    padding: 0;
+
+}
+
+// offer element
+#container02 {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38.2em;
+    margin-left: 2em;
+    margin-right: 2em;
+
+    padding-top: -1em;
+    background-color: $grayPerso;
+
+}
+
+.elements {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 175px;
+    border: 3px solid $myYellow;
+    border-radius: 15px;
+    background-color: white;
+
+    margin-top: 0.9em;
+
+    & a {
+
+        margin-top: 0em;
+        margin-bottom: 1em;
+
+        text-decoration: none;
+        color: black;
+        font-weight: 900;
+
+        border: 1px solid $myYellow;
+        border-radius: 15px;
+        background-color: $myYellow;
+        padding: 30px 50px 30px 50px;
+
+        &:hover {
+
+            box-shadow: 0px 0px 15px 5px rgb(128, 128, 128, 0.4);
+            transform: scale(1.1);
+
+        }
+    }
+
+    & p {
+
+        margin-bottom: 2.5em;
+        margin-top: 5em;
+
+    }
+
+    & span {
+
+        position: relative;
+        top: 0.1em;
+        margin: 0 0.5em;
+
+        font-size: 1.5em;
+    }
+}
+
+// lign after OFFER
+hr {
+
+    margin-top: 5em;
+
+}
+
+// title 2
+.ki {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    & h2 {
+
+        font-size: 2em;
+    }
+
+    & em {
+
+        font-style: normal;
+        margin: 0 0.7em 0 0.7em;
+    }
+}
+
+// biographie
+#container03 {
+
+    display: flex;
+    margin: 2em 4em 0 4em;
+
+    background-color: white;
+    border: 7px solid $myYellow;
+    border-radius: 1em;
+    padding: 2em;
+
+    & img {
+
+        max-width: 40em;
+        width: 40em;
+        height: auto;
+        
+        border: 3px solid $myYellow;
+        border-radius: 0.5em;
+        margin: 1em;
+    }
+
+    & p {
+
+        text-align: justify;
+        margin: 0em 1em 0em 2em;
+    }
+
+    & h2 {
+
+        font-size: 2.3em;
+        margin-left: 0.5em;
+        font-family: 'ZCOOL KuaiLe', cursive;
+        margin-top: -0.000005em;
+    }
+
+    & span { 
+
+        font-size: 0.5em;
+        color: $myYellow;
+        font-family: 'Roboto Condensed', sans-serif;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    & em {
+
+        margin-left: 0.1em;
+        font-size: 0.7em;
+        font-family: 'Roboto Condensed', sans-serif;
+
+    }
+}
+
+// forumlaire
+
+#survey-form {
+
+    display: block;
+    margin: 0; // centrer la div par rapport a la page 
+
+    padding: 1em;
+    padding-left: 1.6em;
+    padding-top: 2em;
+
+    width: 37em;
+    height: 51em;
+
+    color: black;
+    font-size: 1.3em;
+    font-weight: 100;
+
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 7px 0px $myYellow;
+
+    &:hover {
+        box-shadow: 0px 0px 18px 1px $myYellow;  
+    }
+
+}
+
+// Mise en forme du formulaire
+input {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid $myYellow;
+    border-radius: 9px;
+
+    width: 31.8em;
+    height: 3em;
+    margin-top: 0.5em;
+    margin-bottom: 2.5em;
+    margin-left: 1em;
+
+    font-size: 1em;
+    
+    &:focus {
+        outline: none;
+        border: 3px solid $myYellow;
+    }
+}
+
+label {
+
+    margin-left: 1.1em;
+    font-weight: 400;
+
+}
+
+#zone-text-all {
+    margin-top: 4em;
+}
+
+#zone-text-all p {
+    font-weight: 400;
+    font-size: 0.95em;
+
+    text-align: left;
+    margin-left: 1.1em;
+    margin-bottom: 2.5em;
+
+    width: 360px;
+
+    border: 1px solid $myYellow;
+    padding: 10px;
+}
+
+#zone-text-all textarea {
+
+    margin-left: 1.1em;
+    width: 39.5em;
+    height: 20em;
+
+    font-size: 1em;
+
+    border: 1px solid $myYellow;
+    border-radius: 10px;
+     
+    &:focus {
+        outline: none;
+        border: 3px solid $myYellow;
+    }
+
+}
+
+#bouton-valider button {
+
+    border: 1px solid $myYellow;
+    border-radius: 10px;
+
+    font-weight: 900;
+    font-size: 0.7em;
+
+    background-color: $myYellow;
+    color: white;
+
+    width: 10em;
+    height: 3em;
+
+    margin-left: 1.4em;
+    margin-top: 2em;
+
+    &:hover {
+
+        box-shadow: 0px 0px 10px 1px $myYellow;
+        transform: scale(1.1);
+    }
+
+}
+
+//video
+
+.video {
+
+    display: flex;
+    margin-top: 3em;
+    & video {
+        border: 1px solid $grayPerso;
+        border-radius: 10px;
+    }
+
+}
+
+#formAndVideo {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#theEnd {
+
+    display: flex;
+    justify-content: center;
+
+    & ul {
+        display: flex;
+        color: black;
+
+    }
+
+    & li {
+        margin-right: 2em;
+        list-style-type: none;
+
+    }
+
+    & a {
+
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+}
