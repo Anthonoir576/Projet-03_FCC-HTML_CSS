@@ -15,13 +15,13 @@ body {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  position: fixed;
-  top: 1rem;
-  left: 1em;
+  position: absolute;
+  top: 2rem;
+  left: 1.1em;
   max-width: 90px;
 }
 #logo > img {
-  width: 35px;
+  width: 30px;
   height: 30px;
 }
 
@@ -110,6 +110,9 @@ h1:hover {
   border-radius: 15px;
   background-color: white;
   margin-top: 0.9em;
+}
+.elements:hover {
+  box-shadow: 0px 0px 10px 1px #ffc107;
 }
 .elements a {
   margin-top: 0em;
@@ -247,7 +250,7 @@ label {
   text-align: left;
   margin-left: 1.1em;
   margin-bottom: 2.5em;
-  width: 360px;
+  width: 315px;
   border: 1px solid #ffc107;
   padding: 10px;
 }
@@ -282,20 +285,9 @@ label {
   transform: scale(1.1);
 }
 
-.video {
+#formulaire {
   display: flex;
-  margin-top: 3em;
-}
-.video video {
-  border: 1px solid #dbdbdb;
-  border-radius: 10px;
-}
-
-#formAndVideo {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 #theEnd {
@@ -309,6 +301,7 @@ label {
 #theEnd li {
   margin-right: 2em;
   list-style-type: none;
+  margin-bottom: 0.2em;
 }
 #theEnd a {
   color: black;
